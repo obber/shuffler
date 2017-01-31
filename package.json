@@ -1,0 +1,31 @@
+{
+  "name": "shuffler",
+  "version": "1.0.0",
+  "description": "Shuffles a list of names!",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obber/shuffler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obber/shuffler/issues"
+  },
+  "homepage": "https://github.com/obber/shuffler#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "lodash": "^4.17.4"
+  }
+}

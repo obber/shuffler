@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="assets/main.css">
+
+  <script src="lib/vue/dist/vue.min.js"></script>
+  <script src="lib/axios/dist/axios.min.js"></script>
+  
+  <script async src="assets/app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Names</h1>
+    <div>
+      <form v-on:submit="formSubmit(names, $event)">
+        <textarea v-model="names" class="names-input"></textarea>
+        <input type="submit">
+      </form>
+      <div>
+        <ul id="name-list">
+          <li v-for="name in list">
+            {{ name }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
